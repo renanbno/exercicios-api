@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ExercicioDois;
+use App\Http\Controllers\ExercicioSete;
+use App\Http\Controllers\ExercicioUm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('exercicio/um', 
-[ExercicioUmController::class, 'multiplicar']);
+[ExercicioUm::class, 'multiplicar']);
 
 Route::post('exercicio/dois', 
-[ExercicioDoisController::class, 'retornarMaior']);
+[ExercicioDois::class, 'retornarMaior']);
 
 Route::get('exercicio/sete', 
-[ExercicioSeteController::class, 'exibirNumeros']);
+[ExercicioSete::class, 'exibirNumeros']);
